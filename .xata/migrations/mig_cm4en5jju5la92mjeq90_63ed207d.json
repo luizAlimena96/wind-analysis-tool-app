@@ -1,0 +1,16 @@
+{
+  "id": "mig_cm4en5jju5la92mjeq90",
+  "parentID": "mig_cm4en0i44015etohkfp0",
+  "checksum": "1:63ed207d4bbbb32eb72ad5b6fb5059e4a6006b18f044bf063be7758ffecafc11",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "specific_mass_air",
+          "type": "float"
+        },
+        "table": "turbine_data"
+      }
+    }
+  ]
+}

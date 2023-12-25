@@ -1,0 +1,16 @@
+{
+  "id": "mig_cm4en0i44015etohkfp0",
+  "parentID": "mig_cm4emsrju5la92mjeq80",
+  "checksum": "1:939f5221c61afda1937f1fb5f0298da8fad7ce21b80764cd46b4a6a32376f735",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "powers",
+          "type": "string"
+        },
+        "table": "turbine_data"
+      }
+    }
+  ]
+}

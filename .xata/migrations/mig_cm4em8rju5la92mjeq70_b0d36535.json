@@ -1,0 +1,11 @@
+{
+  "id": "mig_cm4em8rju5la92mjeq70",
+  "checksum": "1:b0d36535711056f1a741bd62e042f6c66fa0c5934ce9f37466bc107e527b5033",
+  "operations": [
+    {
+      "addTable": {
+        "table": "turbine_data"
+      }
+    }
+  ]
+}

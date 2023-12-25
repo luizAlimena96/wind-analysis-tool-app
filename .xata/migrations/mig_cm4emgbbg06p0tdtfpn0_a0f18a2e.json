@@ -1,0 +1,16 @@
+{
+  "id": "mig_cm4emgbbg06p0tdtfpn0",
+  "parentID": "mig_cm4em8rju5la92mjeq70",
+  "checksum": "1:a0f18a2ee2c40b03e9f6700f0352f9bfd4f08f55c669fbc73232593757c397c7",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "turbine_data"
+      }
+    }
+  ]
+}

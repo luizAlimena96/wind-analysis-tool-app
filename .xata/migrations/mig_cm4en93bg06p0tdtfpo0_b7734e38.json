@@ -1,0 +1,16 @@
+{
+  "id": "mig_cm4en93bg06p0tdtfpo0",
+  "parentID": "mig_cm4en5jju5la92mjeq90",
+  "checksum": "1:b7734e3809b61c45fd80b383ec4e997f6cea27a52d11d04fbd2045c0620f3498",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "max_output",
+          "type": "float"
+        },
+        "table": "turbine_data"
+      }
+    }
+  ]
+}

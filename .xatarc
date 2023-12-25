@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Luiz-Alberto-Alimena-s-workspace-vovbqj.us-east-1.xata.sh/db/wind-tool-app",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

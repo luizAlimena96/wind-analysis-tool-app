@@ -1,0 +1,16 @@
+{
+  "id": "mig_cm4emsrju5la92mjeq80",
+  "parentID": "mig_cm4emli44015etohkfo0",
+  "checksum": "1:5864dff417c20b437f04f7cb1d2cb18c6be30e35c5c0aeca589f2d2d5a143042",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "velocities",
+          "type": "string"
+        },
+        "table": "turbine_data"
+      }
+    }
+  ]
+}

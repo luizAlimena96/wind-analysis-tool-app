@@ -1,0 +1,16 @@
+{
+  "id": "mig_cm4emli44015etohkfo0",
+  "parentID": "mig_cm4emgbbg06p0tdtfpn0",
+  "checksum": "1:390e01869d2d13b3e345e5d290d50e7f218fcbb968092bec4e70ed083dbe672a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "axis_height",
+          "type": "float"
+        },
+        "table": "turbine_data"
+      }
+    }
+  ]
+}
