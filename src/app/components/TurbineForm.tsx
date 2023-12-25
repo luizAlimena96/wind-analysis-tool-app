@@ -1,5 +1,4 @@
 'use client';
-import Link from 'next/link';
 import React, { useRef } from 'react';
 
 export default function TurbineForm({ createTurbine }: { createTurbine: (FormData: FormData) => void }) {
@@ -15,7 +14,6 @@ export default function TurbineForm({ createTurbine }: { createTurbine: (FormDat
       ref={ref}
     >
       <div className='grow'>
-      <label>Turbine Form</label>
         <div className="mt-4">
           <input
             name='name'
@@ -30,7 +28,7 @@ export default function TurbineForm({ createTurbine }: { createTurbine: (FormDat
           <input
             name='axis_height'
             id='axis_height'
-            type='text'
+            type='float'
             placeholder='Axis height'
             className="input input-bordered w-full max-w-xs"
           />
@@ -60,7 +58,7 @@ export default function TurbineForm({ createTurbine }: { createTurbine: (FormDat
           <input
             name='specific_mass_air'
             id='specific_mass_air'
-            type='text'
+            type='float'
             placeholder='Specific mass of Air'
             className="input input-bordered w-full max-w-xs"
           />
@@ -70,16 +68,13 @@ export default function TurbineForm({ createTurbine }: { createTurbine: (FormDat
           <input
             name='max_output'
             id='max_output'
-            type='text'
+            type='float'
             placeholder='Max output'
             className="input input-bordered w-full max-w-xs"
           />
         </div>
 
-        <button className="mt-4 btn btn-primary">Submit</button>
-        <Link href="/turbines">
-            <button className="ml-4 btn btn-primary">Go back</button>
-      </Link>
+        <button className="mb-10 mt-4 btn btn-primary">Create a new turbine</button>
       </div>
     </form>
   );
