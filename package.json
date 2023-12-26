@@ -1,4 +1,5 @@
 {
+  "homepage": "https://luizAlimena96.github.io/wind-analysis-tool-app",
   "name": "wind-analysis-tool",
   "version": "0.1.0",
   "private": true,
@@ -6,6 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -26,6 +29,7 @@
     "daisyui": "^4.4.23",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "gh-pages": "^6.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
