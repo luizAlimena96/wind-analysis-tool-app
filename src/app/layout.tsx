@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
-import { ClerkProvider } from '@clerk/nextjs'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +18,6 @@ export default function RootLayout({
 }) {
   return (
   <html lang="en">
-    <ClerkProvider>
       <body className="min-h-screen">
         <NavBar/>
           <div className='flex justify-center items-center p-24'>
@@ -27,7 +25,6 @@ export default function RootLayout({
           </div>
           <Footer/>
       </body>
-    </ClerkProvider>
   </html>
   )
 }
