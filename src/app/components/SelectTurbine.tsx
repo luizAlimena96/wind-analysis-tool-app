@@ -11,6 +11,8 @@ function SelectTurbine({ turbines }: { turbines: any[] }) {
   const [roughnessHeight, setRoughnessHeight] = useState<string>('')
   const [weibullDistribution, setWeibullDistribution] = useState<string>('')
   const [eapRawValue, setEapRawValue] = useState<number | null>(null)
+  const [factorCapRaw, setfactorCapRaw] = useState<number | null>(null)
+  const [potMedRaw, setpotMedRaw] = useState<number | null>(null)
 
 
   function handleSelect(event: React.ChangeEvent<HTMLSelectElement>) {
@@ -56,13 +58,9 @@ function SelectTurbine({ turbines }: { turbines: any[] }) {
     const factorCapRaw = (eapRawValue / totalYearHours / maxOutput) * 100;
     const potMedRaw = eapRawValue / totalYearHours;
 
-
-    console.log(
-      eapRawValue,
-      factorCapRaw,
-      potMedRaw
-      )
       setEapRawValue(eapRawValue)
+      setfactorCapRaw(factorCapRaw)
+      setpotMedRaw(potMedRaw)
       initCharts(velocities, freqResults, freqResultsHHub, turbineVelocity, powerCurveResults, futureKwPrevision )
   }
 
@@ -242,6 +240,13 @@ function SelectTurbine({ turbines }: { turbines: any[] }) {
       <div className="divider divider-horizontal"></div>
       <div className="grid flex-grow card bg-base-300 rounded-box place-items-center">
         <h1>Results</h1>
+        <div className="flex w-full">
+          <div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">EAP: {eapRawValue} kW</div>
+          <div className="divider divider-horizontal"></div>
+          <div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">FC: {factorCapRaw} %</div>
+          <div className="divider divider-horizontal"></div>
+          <div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">PMA: {potMedRaw} kW</div>
+        </div>
         <div className="flex flex-col w-full">
           <div className="grid card bg-base-300 rounded-box place-items-center">
             <canvas id="graph_1"></canvas>
