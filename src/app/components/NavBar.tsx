@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect, useState, ChangeEvent } from 'react'
-import { UserButton, useUser } from "@clerk/nextjs"
 
 
 export default function NavBar() {
@@ -20,7 +19,6 @@ export default function NavBar() {
   }, [theme])
 
   const isChecked = theme === 'forest'
-  const {user, isLoaded} = useUser()
   return (
     <div className="navbar bg-primary text-primary-content rounded-2xl mt-10">
       <div className="flex-1">
@@ -35,12 +33,6 @@ export default function NavBar() {
         value="synthwave"
         className="toggle theme-controller mr-4"
       />
-        {
-            isLoaded && user && (
-            <>
-                <UserButton afterSignOutUrl="/"></UserButton>
-            </>
-        )}
     </div>
   );
 }
