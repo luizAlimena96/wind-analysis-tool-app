@@ -6,6 +6,7 @@ export async function getData() {
   try {
     const xataClient = getXataClient();
     const turbinesData = await xataClient.db.turbine_data.getMany();
+    console.log('turbinesData', turbinesData)
 
     const turbines = turbinesData.map((turbine) => ({
       id: turbine.id,
@@ -16,6 +17,7 @@ export async function getData() {
       specific_mass_air: turbine.specific_mass_air,
       max_output: turbine.max_output,
     }));
+    console.log('turbines', turbines)
 
     return turbines;
   } catch (error) {
