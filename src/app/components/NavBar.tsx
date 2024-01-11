@@ -23,7 +23,7 @@ export default function NavBar() {
   const isChecked = theme === 'forest';
   const {user, isLoaded} = useUser()
   return (
-    <div className="navbar bg-primary text-primary-content rounded-2xl mt-10">
+    <div className="navbar w-full bg-primary text-primary-content rounded-2xl mt-10">
       <div className="flex-1">
         <a href="/" className="btn btn-ghost text-xl">
           Wind Tool

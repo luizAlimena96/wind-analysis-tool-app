@@ -20,8 +20,8 @@ export default function RootLayout({
   return (
   <html lang="en">
     <ClerkProvider>
-      <body className="min-h-screen">
-        <NavBar/>
+      <body>
+      <NavBar/>
           <div className='flex justify-center items-center p-24'>
             {children}
           </div>
